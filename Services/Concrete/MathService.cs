@@ -18,7 +18,7 @@ namespace LogAppGiris.Services.Concrete
         {
             _logger.LogInformation("Değer 1:{0}",value1);
             _logger.LogInformation($"Değer2: {value2}");
-            LogContext.PushProperty("Payda", value2);
+            LogContext.PushProperty("Payda", value2);//Log mesajına özellikler eklemek ve custom sütunlarda depolamak için kullanılır.
             decimal result = decimal.Zero;
 			try
 			{
